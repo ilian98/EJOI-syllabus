@@ -1,0 +1,83 @@
+%---DOCUMENT MARGINS---
+\usepackage{geometry} % Required for adjusting page dimensions and margins
+\geometry{
+	paper=a4paper, % Paper size, change to letterpaper for US letter size
+	top=2.5cm, % Top margin
+	bottom=2.5cm, % Bottom margin
+	left=2.5cm, % Left margin
+	right=2.5cm, % Right margin
+	headheight=18pt, % Header height
+	%footskip=1.5cm, % Space from the bottom margin to the baseline of the footer
+	%headsep=0.8cm, % Space from the top margin to the baseline of the header
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+\usepackage{cmap}
+
+\usepackage{fontspec}
+\defaultfontfeatures{Renderer=Basic,Ligatures={TeX}}
+\setmainfont{Times New Roman}
+\setsansfont{Times New Roman}
+\usepackage[english]{babel}
+
+\usepackage[nobottomtitles*]{titlesec}
+\titleformat
+{\section} % command
+{\fontsize{16}{16}\sffamily\bfseries} % format
+{\thesection.} % label
+{7pt} % sep
+{} % before-code
+\titlespacing{\section}{0pt}{1em}{0ex}
+
+\titleformat
+{\subsection} % command
+{\fontsize{14}{14}\sffamily\bfseries} % format
+{\thesubsection.} % label
+{7pt} % sep
+{} % before-code
+\titlespacing{\subsection}{0pt}{1em}{0ex}
+
+\titleformat
+{\subsubsection} % command
+{\fontsize{13}{13}\sffamily\bfseries} % format
+{\type\thesubsubsection.} % label
+{7pt} % sep
+{} % before-code
+\titlespacing{\subsubsection}{27pt}{1em}{0ex}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}}
+
+\setcounter{secnumdepth}{4}
+\titleformat
+{\paragraph} % command
+{\fontsize{13}{13}\sffamily\bfseries} % format
+{\type\thesubsubsection\theparagraph.} % label
+{7pt} % sep
+{} % before-code
+\titlespacing{\paragraph}{27pt}{1em}{0ex}
+\renewcommand{\theparagraph}{\alph{paragraph}}
+
+
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{27pt}
+\sloppy
+
+\usepackage{emoji}
+\usepackage{enumitem}
+\setlist{itemsep=-0.4em,leftmargin=48pt,topsep=0em}
+
+\usepackage{amsmath}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % clear existing header/footer entries
+\fancyhead[L]{\large{EJOI syllabus -- version 2023}}
+\fancyfoot[R]{Page \thepage \ of \pageref*{LastPage}}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	citecolor=blue,
+	linkcolor=blue,
+	urlcolor=cyan,
+}
+\raggedbottom

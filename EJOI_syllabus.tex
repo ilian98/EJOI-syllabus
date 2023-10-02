@@ -1,0 +1,337 @@
+\documentclass[12pt]{article}
+\input{structure.tex}
+
+\begin{document}
+	\begin{center}
+		\Large\textbf{European Junior Olympiad in Informatics Syllabus}
+	\end{center}
+	
+	The purpose of this document is to serve as a set of guidelines to help decide whether a task is appropriate for the European Junior Olympiad in Informatics (EJOI), but it cannot serve as a strong limitation regarding topics not explicitly or implicitly mentioned. Based on this document, the International Scientific Committee (ISC) evaluates the task proposals when selecting the competition tasks. As a consequence of the previous item, another purpose of the Syllabus is to help the organizers of junior national olympiads prepare their students for the EJOI.
+	
+	The Syllabus presented below has been compiled using the International Olympiad in Informatics (IOI) Syllabus and the topics excluded from the IOI Syllabus are noted with *.
+	
+	\section{Mathematics}
+	\subsection{Arithmetics}
+		\begin{itemize}[label=\emoji{white-check-mark}]
+			\item Integers, operations (including exponentiation), comparison
+			\item Fractions, percentages
+			\item Basic properties of integers (sign, parity, divisibility)
+			\item Prime numbers
+			\item GCD and LCM
+			\item Basic modular arithmetic: addition, subtraction, multiplication
+			\item Representations of integers in different bases
+		\end{itemize}
+		
+		\begin{itemize}[label=\emoji{x}]
+			\item Additional topics from number theory
+			\item Advanced modular arithmetic: division and inverse elements
+			\item Complex analysis for increasing precision of floating-point computations
+			\item Complex numbers
+		\end{itemize}
+	
+	\subsection{Geometry}
+		\begin{itemize}[label=\emoji{white-check-mark}]
+			\item Line, line segment, angle, triangle, rectangle, square, circle
+			\item Point, vector, coordinates in the plane
+			\item Polygon (vertex, side/edge, simple, convex, inside, area)
+			\item Euclidean distance
+			\item Pythagorean theorem
+		\end{itemize}
+	
+		\begin{itemize}[label=\emoji{x}]
+			\item Geometry in 3D or higher dimensional spaces 
+			\item General conics (parabolas, hyperbolas, ellipses)
+			\item Trigonometric functions
+		\end{itemize}
+	
+	\subsection{Discrete Structures (DS)}
+		\newcommand{\type}{DS}
+		\subsubsection{Sets, relations and functions}
+		\begin{itemize}[label=\emoji{white-check-mark}]
+			\item Sets (inclusion/exclusion, complements, Cartesian products, power sets)
+			\item Relations (reflexivity, symmetry, transitivity, equivalence relations, total/linear order relations, lexicographic order)
+			\item Functions (surjections, injections, inverses, composition)
+		\end{itemize}
+		
+		\begin{itemize}[label=\emoji{x}]
+			\item Cardinality and countability (of infinite sets)
+		\end{itemize}
+		
+		\subsubsection{Basic logic}
+		\begin{itemize}[label=\emoji{white-check-mark}]
+			\item First-order logic
+			\item Logical connectives (incl. their basic properties)
+			\item Truth tables
+			\item Universal and existential quantification
+			\item Using and applying basic rules for implication
+		\end{itemize}
+	
+		\begin{itemize}[label=\emoji{x}]
+			\item Normal forms
+			\item Validity
+			\item Limitations of predicate logic
+		\end{itemize}
+	
+		\subsubsection{Proof techniques}
+		\begin{itemize}[label=\emoji{white-check-mark}]
+			\item Notions of implication, converse, inverse, contrapositive, negation, and contradiction
+			\item Direct proofs, proofs by: counterexample, contraposition, contradiction
+			\item Mathematical induction, strong induction (also known as complete induction)
+			\item Recursive mathematical definitions (including mutually recursive definitions)
+		\end{itemize}
+		
+		\subsubsection{Basics of counting}
+		\begin{itemize}[label=\emoji{white-check-mark}]
+			\item Counting arguments (sum and product rule, arithmetic and geometric progressions, Fibonacci numbers)
+			\item Permutations, variations and combinations with or without repetition (basic definitions and applications) 
+			\item Factorial function, binomial coefficients
+			\item Inclusion-exclusion principle
+			\item Pigeonhole principle
+			\item Pascal’s identity, Binomial theorem
+		\end{itemize}
+		
+		\begin{itemize}[label=\emoji{x}]
+			\item Solving of recurrence relations
+			\item Burnside lemma
+		\end{itemize}
+	
+		\subsubsection{Graphs and trees}
+		\begin{itemize}[label=\emoji{white-check-mark}]
+			\item Undirected graphs (vertex/node, edge, degree, adjacency)
+			\item Directed graphs (in-degree, out-degree) and directed acyclic graphs (DAG)
+			\item Multigraphs, graphs with self-loops
+			\item Bipartite graphs
+			\item ‘Decorated’ graphs with edge/node labels, weights, colors
+			\item Paths in graphs (undirected and directed path, cycle, Euler tour/trail, Hamilton path/cycle)
+			\item Reachability (connected component, shortest distance)
+			\item Trees (leaf, diameter, forest)
+			\item Rooted trees (root, parent, child, ancestor, subtree)
+			\item Spanning trees (subgraph)
+			\item Traversal strategies
+			\item Basic combinatorial properties of graphs\footnote{This item includes various relationships between the numbers of vertices, edges and connected components in graphs as well as vertex degrees and other similar properties. One example is the Handshaking lemma.}
+		\end{itemize}
+	
+		\begin{itemize}[label=\emoji{x}]
+			\item Planar graphs
+			\item Hypergraphs
+			\item Specific graph classes such as perfect graphs
+		\end{itemize}
+			
+		\subsubsection{Discrete probability – \emoji{x}}
+	
+	\subsection{Other Areas}
+		\begin{itemize}[label=\emoji{white-check-mark}]
+			\item Matrices (definition)
+		\end{itemize}
+	
+		\begin{itemize}[label=\emoji{x}]
+			\item Theory of combinatorial games, e.g., NIM game, Sprague-Grundy theorem
+			\item Linear algebra, including (but not limited to):
+				\begin{itemize}[label=$\bullet$,leftmargin=12pt,topsep=-\parskip]
+					\item Matrix multiplication/exponentiation/inversion, and Gaussian elimination
+					\item Fast Fourier transform
+				\end{itemize}
+			\item Calculus
+			\item Statistics
+		\end{itemize}
+	
+	\section{Computer Science}
+	\subsection{Programming Fundamentals (PF)}
+		\renewcommand{\type}{PF}
+		\subsubsection{Basic programming constructs}
+		\begin{itemize}[label=\emoji{white-check-mark}]
+			\item Basic syntax and semantics of C++
+			\item Variables, types, expressions, and assignment
+			\item Simple I/O
+			\item Conditional and iterative control structures
+			\item Functions and parameter passing
+			\item Recursion
+			\item Bitwise operations
+			\item Structured decomposition
+		\end{itemize}
+		
+		\subsubsection{Fundamental data structures}
+		\begin{itemize}[label=\emoji{white-check-mark}]
+			\item Primitive types (boolean, signed/unsigned integer, character)
+			\item Arrays
+			\item Strings and string processing
+			\item Static and stack allocation (elementary automatic memory management)
+			\item Linked structures
+			\item Implementation strategies for graphs and trees
+			\item Elementary use of real numbers in numerically stable tasks
+			\item The floating-point representation of real numbers, the existence of precision issues\footnote{Whenever possible, avoiding floating point calculations completely is the preferred solution, but it is not expected the need for extensive use of fractions to perform exact calculations.}
+			\item Pointers and references
+			\item Data representation in memory
+		\end{itemize}
+		
+		\begin{itemize}[label=\emoji{x}]
+			\item Heap allocation
+			\item Runtime storage management
+			\item Non-trivial calculations on floating-point numbers, manipulating precision errors
+		\end{itemize}
+		
+		\subsubsection{Event-driven programming}
+		Some competition tasks may involve a dialog with a reactive environment. This will include implementation of such an interaction with the provided environment.
+		
+	\subsection{Algorithms and Complexity (AL)}
+		\renewcommand{\type}{AL}
+		\subsubsection{Algorithmic analysis}
+		\begin{itemize}[label=\emoji{white-check-mark}]
+			\item Algorithm specification, precondition, postcondition, correctness, invariants
+			\item Asymptotic analysis of upper complexity bounds
+			\item Amortized analysis
+			\item Big $O$ notation
+			\item Standard complexity classes: constant, logarithmic, linear, $O(n\log{n})$, quadratic, cubic, exponential, etc.
+			\item Time and space trade-offs in algorithms
+			\item Empirical performance measurements
+			\item Identifying differences among best, average, and worst-case behaviors
+			\item Tuning parameters to reduce running time, memory consumption or other measures of performance
+		\end{itemize}
+		
+		\begin{itemize}[label=\emoji{x}]
+			\item Asymptotic analysis of average complexity bounds
+			\item Using recurrence relations to analyze recursive algorithms (except the simple recurrent relation used to analyze merge sort)
+		\end{itemize}
+			
+		\subsubsection{Algorithmic strategies}
+		\begin{itemize}[label=\emoji{white-check-mark}]
+			\item Simple loop design strategies
+			\item Brute-force algorithms (exhaustive search)
+			\item Greedy algorithms
+			\item Divide-and-conquer
+			\item Backtracking (recursive and non-recursive), Branch-and-bound
+			\item Dynamic programming, including (but not limited to):
+				\begin{itemize}[label=$\bullet$,leftmargin=12pt,topsep=-\parskip]
+					\item basic and classical DP
+					\item DP with bitmasks
+					\item digit DP
+					\item DP on tree and DAG
+				\end{itemize}
+		\end{itemize}
+	
+		\begin{itemize}[label=\emoji{x}]
+			\item Meet in the middle
+			\item Square root decomposition
+			\item Heuristics
+			\item Discrete approximation algorithms
+			\item Randomized algorithms
+			\item Finding good features for machine learning tasks
+			\item Clustering algorithms (e.g. $k$-means, $k$-nearest neighbor)
+			\item Minimizing multi-variate functions using numerical approaches
+		\end{itemize}
+		
+		\stepcounter{subsubsection}
+		\paragraph{Basic algorithms}
+		\begin{itemize}[label=\emoji{white-check-mark}]
+			\item Simple algorithms involving integers: radix conversion, Euclid’s algorithm, primality test by $O(\sqrt{n})$ trial division, Sieve of Eratosthenes, factorization (by trial division or a sieve), fast exponentiation
+			\item Simple operations on arbitrary precision integers (addition, subtraction, multiplication)
+			\item Simple array manipulation (filling, shifting, rotating, reversal, resizing, minimum/ma-\\ximum, prefix sums, histogram, count sort)
+			\item Sliding window and two pointers
+			\item Simple string algorithms (e.g. naive substring search)
+			\item Sequential processing/search and binary search (also binary search the answer)
+		\end{itemize}
+	
+		\paragraph{Advanced algorithms}
+		\begin{itemize}[label=\emoji{white-check-mark}]
+			\item Bucket sort and radix sort
+			\item Quicksort and Quickselect to find the $k$-th smallest element
+			\item $O(n\log_2{n})$ worst-case sorting algorithms (heap sort, merge sort)
+			\item Traversals of ordered trees (pre-, in-, and post-order)
+			\item Basics of combinatorial game theory, winning and losing positions, minimax algorithm for optimal game playing
+			\item Binary lifting
+		\end{itemize}
+	
+		\begin{itemize}[label=\emoji{x}]
+			\item Extended Euclid’s algorithm
+			\item Arithmetical expressions and calculating the value using shunting yard algorithm
+			\item 2-SAT
+			\item Hashing
+			\item Advanced string algorithms such as Rabin-Karp, KMP, Z-algorithm, Aho-Corasick
+			\item Complex dynamic programming optimizations such as divide and conquer, convex hull trick
+		\end{itemize}
+	
+		\paragraph{Graph algorithms}
+		\begin{itemize}[label=\emoji{white-check-mark}]
+			\item Depth- and breadth-first traversals
+			\item Applications of the depth-first search, such as topological ordering and Euler tour/trail
+			\item Finding connected components and transitive closures
+			\item Shortest-path algorithms (Dijkstra, Bellman-Ford, Floyd-Warshall)
+			\item Minimum spanning tree (Jarnik-Prim and Kruskal algorithms)
+			\item Graph extension\footnote{Technique that modifies the graph and adds additional information to each vertex and in that sense ‘extends’ the initial information for every vertex. For example, if we have a graph that is a road network and every road has a travel time, we can add the current time information to every vertex and look at the vertices as pairs -- (initial number, current time).}
+		\end{itemize}
+	
+		\begin{itemize}[label=\emoji{x}]
+			\item Lexicographical BFS, maximum adjacency search and their properties
+			\item Biconnectivity in undirected graphs (bridges, articulation points)*
+			\item Connectivity in directed graphs (strongly connected components)*
+			\item Maximum bipartite matching*
+			\item Maximum flow. Flow/cut duality theorem
+		\end{itemize}
+		
+		\paragraph{Geometric algorithms}
+		In general, the ISC has a strong preference towards problems that can be solved using integer arithmetics to avoid precision issues. This may include representing some computed values as exact fractions, but extensive use of such fractions in calculations is discouraged.
+		
+		Additionally, if a problem uses two-dimensional objects, the ISC prefers problems in which such objects are rectilinear.
+		
+		\begin{itemize}[label=\emoji{white-check-mark}]
+			\item Representing points, vectors, lines, line segments
+			\item Coordinate compression
+			\item Sweeping line method
+		\end{itemize}
+	
+		\begin{itemize}[label=\emoji{x}]
+			\item Checking for collinear points, parallel/orthogonal vectors and clockwise turns (for example, by using determinant evaluation or cross product and dot product of two-dimensional vectors)*
+			\item Computing the area of a polygon from the coordinates of its vertices*
+			\item Intersection of two lines*
+			\item Checking whether a general polygon contains a point*
+			\item Advanced algorithms for finding convex hull* 
+			\item Point-line duality
+			\item Halfspace intersection, Voronoi diagrams, Delaunay triangulations
+			\item Computing coordinates of circle intersections against lines and circles
+			\item Linear programming in $3$ or more dimensions and its geometric interpretations
+			\item Center of mass of a 2D object
+			\item Computing and representing the composition of geometric transformations if the knowledge of linear algebra gives an advantage
+		\end{itemize}
+		
+		\subsubsection{Data structures}
+		\begin{itemize}[label=\emoji{white-check-mark}]
+			\item Stacks, queues and double-ended queues
+			\item STL data structures: pair, vector, priority queue, (multi)set, (multi)map and unordered structures
+			\item Representations of graphs (adjacency lists, adjacency matrix, edge list)
+			\item Binary heap data structures
+			\item Representation of disjoint sets: the Union-Find data structure
+			\item Statically balanced binary search trees. Instances of this include binary indexed trees (also known as Fenwick trees) and segment trees (also known as interval trees and tournament trees).
+			\item Sparse table for LCA, RMQ queries
+			\item Nesting of data structures, such as having a sequence of sets
+		\end{itemize}
+		
+		\begin{itemize}[label=\emoji{x}]
+			\item Lazy propagation technique
+			\item Merge-sort tree
+			\item Persistent data structures*
+			\item Balanced binary search trees*
+			\item Augmented binary search trees*
+			\item Cartesian tree
+			\item Two-dimensional tree-like data structures (such as a 2D statically balanced binary tree or a treap of treaps) used for 2D queries
+			\item Complex heap variants such as binomial and Fibonacci heaps
+			\item Trie*
+			\item String data structures such as suffix array/tree/automata
+			\item Decomposition of static trees (heavy-light decomposition, separator structures such as centroid decomposition)*
+			\item Euler tour technique
+			\item Data structures for dynamically changing trees and their use in graph algorithms
+			\item Using and implementing hash tables (incl. strategies to resolve collisions) but one is expected to know and use STL unordered data structures
+		\end{itemize}
+		
+		\subsubsection{Distributed algorithms – \emoji{x}}
+		
+		\subsubsection{Cryptographic algorithms – \emoji{x}}
+		
+		\subsubsection{Parallel algorithms – \emoji{x}}
+		
+	\subsection{Other Areas}
+		\begin{itemize}[label=$\bullet$,leftmargin=39pt]
+			\item Basic computability – \emoji{x}
+			\item The complexity classes of P and NP  – \emoji{x}
+			\item Automata and grammars – \emoji{x}
+		\end{itemize}
+\end{document}
