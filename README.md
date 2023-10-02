@@ -1,2 +1,2 @@
 # EJOI-syllabus
-Syllabus for the EJOI
+The syllabus is written in LaTeX and more precisely in LuaTeX.
